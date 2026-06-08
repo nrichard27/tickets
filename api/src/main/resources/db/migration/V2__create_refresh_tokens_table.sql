@@ -1,6 +1,6 @@
 CREATE TABLE refresh_tokens (
     jti UUID,
-    root_jti UUID NOT NULL,
+    root_jti UUID,
     replaced_by UUID,
     user_id UUID NOT NULL,
     issued_at TIMESTAMPTZ NOT NULL DEFAULT now(),
